@@ -17,4 +17,4 @@ The application is composed of two parts.
 For more information and speicficatopn check the specific components in the next pages click on the below links:
 
 * [Flask API](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/FlaskAPI-BackEnd)
-* [Angular2](other_file.md)
+* [Angular2](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/Angular2-FrontEnd)
