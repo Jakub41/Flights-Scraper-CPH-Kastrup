@@ -13,7 +13,7 @@ The application is composed of two parts.
 
 For more information and speicficatopn check the specific components in the next pages click on the below links:
 	
-* [Flask API](other_file.md)
+* [Flask API](Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/Angular2-FrontEnd)
 * [Angular2](other_file.md)
   
 
