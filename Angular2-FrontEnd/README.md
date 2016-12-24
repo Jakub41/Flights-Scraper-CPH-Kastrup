@@ -9,7 +9,7 @@ The front-end is based on **Angular2** and **Typescript**.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
-Chek this [link](https://angular.io/docs/ts/latest/) for more usefull information about the technologies used in this project.
+Chek this [link](https://angular.io/docs/ts/latest/) for more usefull information about `Angula2`.
 
 The next componets were used for the interface:
 
