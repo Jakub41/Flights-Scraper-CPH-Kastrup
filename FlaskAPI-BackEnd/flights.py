@@ -28,8 +28,9 @@ class Cphdk():
         flights = self._departures.find_all('div', FLIGHTCLASS)
         update_time = self._departures.find_all('div', {'class': 'flights-search-block'})[0]
 
-        webite_update_time = self._get_website_update_time(update_time)
+        website_update_time = self._get_website_update_time(update_time)
 
+        print("==========================departure json data=======================================")
         departures = []
         for flight in flights:
             departure = {}
@@ -48,8 +49,9 @@ class Cphdk():
             departure['flightstatus'] = self._get_flight_status_departure(flight)
             if departure['flightstatus']:
                 print("flight status: %s" % departure['flightstatus'])
+            print("departure=========", departure)
             departures.append(departure)
-        return {'data':departures,'update_time': webite_update_time}
+        return {'data':departures,'update_time': website_update_time}
 
     def parse_arrival_table(self,data):
         r = requests.get(
@@ -64,8 +66,9 @@ class Cphdk():
         flights = self._arrivals.find_all('div', FLIGHTCLASS)
         update_time = self._arrivals.find_all('div', {'class': 'flights-search-block'})[0]
 
-        webite_update_time = self._get_website_update_time(update_time)
+        website_update_time = self._get_website_update_time(update_time)
 
+        print("==========================arrival json data=======================================")
         arrivals = []
         for flight in flights:
             arrival = {}
@@ -79,8 +82,9 @@ class Cphdk():
             arrival['flightstatus'] = self._get_flight_status_arrival(flight)
             if arrival['flightstatus']:
                 print("flight status - arrivals: %s" % arrival['flightstatus'])
+            print("arrival=========", arrival)
             arrivals.append(arrival)
-        return {'data':arrivals,'update_time': webite_update_time}
+        return {'data':arrivals,'update_time': website_update_time}
 
 
     def _get_flight_time(self, flight):
