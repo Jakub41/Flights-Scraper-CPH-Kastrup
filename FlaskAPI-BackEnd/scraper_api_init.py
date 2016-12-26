@@ -1,6 +1,6 @@
 from flask import Flask, Response,request
 from flask_cors import CORS
-from flightsClass import Cphdk
+from flights import Cphdk
 from flask_restful import Api
 import json
 

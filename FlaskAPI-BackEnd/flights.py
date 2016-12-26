@@ -10,10 +10,10 @@ FLIGHTNUM = {'class': 'main-flight'}
 TERMINAL  = {'class':'flights__table__col--terminal'}
 FLIGHTSTATUS = {'class': 'stylish-table__cell'}
 
+
 class Cphdk():
 
     # def __init__(self):
-
 
     def parse_departure_table(self,data):
         r = requests.get(
@@ -135,25 +135,3 @@ class Cphdk():
     def _get_website_update_time(self,update_time):
         cells = update_time.find_all('p')[0].text.strip()
         return cells
-
-
-
-# Test What Data Departure Table -> For arrival just change to Cph.parse_arrival_table()
-    '''
-    Cph = Cphdk()
-    flights = Cph.parse_departure_table()
-    for flight in flights:
-        print \
-            (
-        [
-            flight.get('time'),
-            flight.get('delayed'),
-            flight.get('airline'),
-            flight.get('destination'),
-            flight.get('number'),
-            flight.get('terminal'),
-            flight.get('flightstatus')
-
-        ]
-    )
-    '''
