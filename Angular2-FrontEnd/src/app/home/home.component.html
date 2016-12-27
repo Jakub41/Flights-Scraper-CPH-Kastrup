@@ -1,0 +1,56 @@
+<div class="header navbar-fixed-top">
+  <h1>CPH - Flight Information</h1>
+</div>
+<div class="container">
+  <div class="row top-margin-space">
+    <div class="col-md-12">
+      <div class="btn-group btn-group-lg">
+        <button id="arrivals" [ngStyle]="{'background-color': arrivalColor}" class="btn-default active-btn"
+                (click)="current = []; getArrivals()" type="button">
+        </button>
+        <button id="departures" [ngStyle]="{'background-color': departureColor}" class="btn-default active-btn"
+                (click)="current = []; getDepartures()" type="button">
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row top-margin-space">
+    <app-search-form [route]="currentRoute" (searchResult)="searchedData($event)"></app-search-form>
+    <p class="updateTimeClass">{{updatedTime}}</p>
+  </div>
+  <div class="row top-margin-space">
+    <div ng-controller="safeCtrl">
+      <table st-table="displayedCollection" class="table table-striped">
+        <thead>
+          <tr>
+            <th st-sort="time">Time</th>
+            <th st-sort="delayed">Delayed Time</th>
+            <th st-sort="airline">Airline</th>
+            <th st-sort="number">Number</th>
+            <th [hidden]="currentRoute == 'departures'" st-sort="destination">From</th>
+            <th [hidden]="currentRoute == 'arrivals'" st-sort="destination">To</th>
+            <th [hidden]="currentRoute == 'arrivals'" st-sort="terminal">Terminal</th>
+            <th st-sort="flightstatus">FlightStatus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="row in displayedCollection" *ngFor="let flight of current">
+            <td>{{flight.time}}</td>
+            <td>{{flight.delayed}}</td>
+            <td>{{flight.airline}}</td>
+            <td>{{flight.number}}</td>
+            <td>{{flight.destination}}</td>
+            <td [hidden]="currentRoute == 'arrivals'">{{flight.terminal}}</td>
+            <td>{{flight.flightstatus}}</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="text-center" st-pagination="" st-items-by-page="5" colspan="8"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+/**** Global styles ****/
+body {
+  padding-top: 70px;
+}
+
+.header {
+  z-index: -1;
+  width: 100%;
+  height: 50px;
+  background-color: black;
+}
+
+.header h1 {
+  text-align: center!important;
+  color: #b82929;
+  font-size: 18px;
+}
