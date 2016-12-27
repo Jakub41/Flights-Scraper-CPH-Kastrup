@@ -9,12 +9,13 @@ The front-end is based on **Angular2** and **Typescript**.
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.20-4.
 
-Chek this [link](https://angular.io/docs/ts/latest/) for more usefull information about `Angula2`.
+Chek this [link](https://angular.io/docs/ts/latest/) for more usefull information about `Angular2`.
 
-The next componets were used for the interface:
+The next external componets were used for the interface:
 
 * [Bootstrap](https://valor-software.com/ng2-bootstrap/#/)
 * [Ng2 Smart Table](https://akveo.github.io/ng2-smart-table/)
+* [myDatePicker](https://github.com/kekeh/mydatepicker)
 
 ## Interface
 The application is based of one page with the main view of the table for the arrivals flights.
@@ -55,4 +56,4 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## If Compiler Error
-If you see an **Error** like **Unknow...** or something else when you are tryining **ng serve** or **ng build** please use this command first **npm install**. If something wrong appear in the terminal please use this **sudo npm cache clean** then repeat the above commands. 
+If you see an **Error** like **Unknow...** or something else when you are tryining **ng serve** or **ng build** please use this command first **npm install**. If something wrong appear in the terminal please use this **sudo npm cache clean** then repeat the above commands.

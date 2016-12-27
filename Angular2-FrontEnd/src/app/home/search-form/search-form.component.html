@@ -1,7 +1,10 @@
 <div class="col-md-12">
     <div class="input-group" id="adv-search">
         <div class="marginForSearch">
-            <input type="text" class="form-control" placeholder="Search for flight..." [(ngModel)]="searchStr" name="searchStr" (keyup)="inputSearch()" (keyup.enter)="searchFlights()"/>
+            <input type="text" class="form-control"
+            placeholder="Search for flight..." 
+            [(ngModel)]="searchStr" name="searchStr"
+            (keyup)="inputSearch()" (keyup.enter)="searchFlights()"/>
         </div>
         <div class="marginForSearch">
             <my-date-picker
