@@ -53,3 +53,6 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 ## Further help
 
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## If Compiler Error
+If you see an **Error** like **Unknow...** or something else when you are tryining **ng serve** or **ng build** please use this command first **npm install**. If something wrong appear in the terminal please use this **sudo npm cache clean** then repeat the above commands. 
