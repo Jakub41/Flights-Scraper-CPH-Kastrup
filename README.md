@@ -5,9 +5,9 @@ An Angular2 TS and Python/Flask API application for show flight information.
 The application demo is stored on 2 servers:
 
 * Angular2 on [Firebase](https://firebase.google.com/docs/hosting/) featured by Google
-* Flask API on [link]()
+* Flask API on my own domain/subdomain [scraperapi/arrivals](https://scraperapi.jakublemiszewski.com/api/arrivals/) & [scraperapi/departures](https://scraperapi.jakublemiszewski.com/api/departures/)
 
-Demo Page: [App]()
+Demo Page: [App](https://cph-flights-information.firebaseapp.com/)
 
 ## Description
 

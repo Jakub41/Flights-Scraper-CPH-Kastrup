@@ -7,10 +7,12 @@ let isDev: boolean = true;
 let apiUrl: string;
 
 if (!isDev) {
-  apiUrl = 'PRODUCTION_URL';
+  apiUrl = 'https://scraperapi.jakublemiszewski.com/api/';
 } else {
   apiUrl = 'http://localhost:5000/api/';
 }
+// https://scraperapi.jakublemiszewski.com/api/ -> For API Production
+// http://localhost:5000/api/ -> For Dev
 
 @Injectable()
 export class HttpService {
