@@ -17,7 +17,7 @@
 
   <div class="row top-margin-space">
     <app-search-form [route]="currentRoute" (searchResult)="searchedData($event)"></app-search-form>
-    <p class="updateTimeClass">{{updatedTime}}</p>
+    <p class="updateTimeClass">Last Update - {{updatedTime}}</p>
   </div>
   <div class="row top-margin-space">
     <div ng-controller="safeCtrl">
