@@ -7,9 +7,9 @@ let isDev: boolean = true;
 let apiUrl: string;
 
 if (!isDev) {
-  apiUrl = 'https://scraperapi.jakublemiszewski.com/api/';
-} else {
   apiUrl = 'http://localhost:5000/api/';
+} else {
+  apiUrl = 'https://scraperapi.jakublemiszewski.com/api/';
 }
 // https://scraperapi.jakublemiszewski.com/api/ -> For API Production
 // http://localhost:5000/api/ -> For Dev

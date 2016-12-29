@@ -1,10 +1,12 @@
 # CPH Flights Information - BackEnd
 ---
 ## Introdution
-This is the back-end of the application. It is the scraper which is getting the information about the flights from the [Copenhagen airport](https://www.cph.dk/en/) which are showed on the [front-end](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/Angular2-FrontEnd).
+This is the back-end of the application. The scraper downloads the flight information from the [Copenhagen airport site](https://www.cph.dk/en/) which is showed on the [front-end](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/Angular2-FrontEnd).
 
 ## The API
-The flights scraper is built in python 3.4. It's built with the following frameworks and libraries:
+The flights scraper is built in **Python 3.4**. 
+
+It's built with the following frameworks and libraries:
 
 **Flask** a Simple Python based webserver [link](http://flask.pocoo.org/)
 
@@ -15,4 +17,4 @@ The flights scraper is built in python 3.4. It's built with the following framew
 **JSON** a library for encode/decode and data interchange format [link](https://docs.python.org/2/library/json.html)
 
 ## How It Works
-The scraper API 
+The scraper API connects and downloads information from Copenhagen airport site and arranges the information in two tables the arraivals and departures.   

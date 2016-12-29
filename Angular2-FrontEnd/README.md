@@ -18,14 +18,14 @@ The next external componets were used for the interface:
 * [myDatePicker](https://github.com/kekeh/mydatepicker)
 
 ## Interface
-The application is based of one page with the main view of the table for the arrivals flights.
+The application opens with the arrival flights table.
 
-On the top one has two buttons, one for the arrivals and one for the departures. Clicking those buttons the user can easaly switch between the two tables.
+On the top there are two buttons, one for the arrivals and one for the departures. Clicking those buttons the user can easaly switch between the two tables.
 
-Below the buttons a search form. Here one can search a specific flight with this parameters: arrivals, departures
+Below the buttons a search form. Here one can search for a specific flight with these parameters: arrival, departure
 date, from/to a specific city.
 
-In the end the table showing the information about the flights.
+Finally the general flight information table.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -56,4 +56,4 @@ Run `ng github-pages:deploy` to deploy to Github Pages.
 To get more help on the `angular-cli` use `ng --help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
 
 ## If Compiler Error
-If you see an **Error** like **Unknow...** or something else when you are tryining **ng serve** or **ng build** please use this command first **npm install**. If something wrong appear in the terminal please use this **sudo npm cache clean** then repeat the above commands.
+If you see an **Error** like **Unknow...** or something else when you are tryining **ng serve** or **ng build** please use this command **npm install**. If something wrong appears in the terminal please use this **sudo npm cache clean** then repeat the above commands.
