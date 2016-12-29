@@ -7,7 +7,7 @@ let isDev: boolean = true;
 let apiUrl: string;
 
 if (!isDev) {
-  apiUrl = 'http://localhost:5000/api/';
+  apiUrl = '';
 } else {
   apiUrl = 'https://scraperapi.jakublemiszewski.com/api/';
 }
