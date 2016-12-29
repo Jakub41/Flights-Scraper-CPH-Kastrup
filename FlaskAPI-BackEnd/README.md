@@ -17,4 +17,4 @@ It's built with the following frameworks and libraries:
 **JSON** a library for encode/decode and data interchange format [link](https://docs.python.org/2/library/json.html)
 
 ## How It Works
-The scraper API connects and downloads information from Copenhagen airport site and arranges the information in two tables the arraivals and departures.   
+The scraper API connects and downloads information from Copenhagen airport site and arranges the information in two tables the arraivals and departures. The API also allow the user to search for a specific flight. 
