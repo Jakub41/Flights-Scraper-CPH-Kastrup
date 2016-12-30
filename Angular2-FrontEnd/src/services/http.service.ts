@@ -1,16 +1,16 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
-import { environment } from './environment';
+import { environment } from '../environments/environment';
 import 'rxjs/add/operator/map';
 
 let isDev: boolean = true;
 let apiUrl: string;
 
-if (!isDev) {
-  apiUrl = '';
+if (environment.production) {
+  apiUrl = 'https://scraperapi.jakublemiszewski.com/api/'; //may 
 } else {
-  apiUrl = 'https://scraperapi.jakublemiszewski.com/api/';
+  apiUrl = 'http://localhost:5000/api/';
 }
 // https://scraperapi.jakublemiszewski.com/api/ -> For API Production
 // http://localhost:5000/api/ -> For API Dev
