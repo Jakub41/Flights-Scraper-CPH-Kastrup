@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Http, Headers, Response, RequestOptions } from '@angular/http';
 import { Observable } from 'rxjs/Rx';
+import { environment } from './environment';
 import 'rxjs/add/operator/map';
 
 let isDev: boolean = true;
@@ -12,7 +13,7 @@ if (!isDev) {
   apiUrl = 'https://scraperapi.jakublemiszewski.com/api/';
 }
 // https://scraperapi.jakublemiszewski.com/api/ -> For API Production
-// http://localhost:5000/api/ -> For Dev
+// http://localhost:5000/api/ -> For API Dev
 
 @Injectable()
 export class HttpService {
