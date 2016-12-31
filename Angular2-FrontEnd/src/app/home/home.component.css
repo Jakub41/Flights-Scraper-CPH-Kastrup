@@ -1,11 +1,11 @@
-.header {
+header {
   z-index: 1;
   width: 100%;
   height: 50px;
   background-color: #123081;
 }
 
-.header h1 {
+header h1 {
   text-align: center!important;
   color: #ffd500;
   font-size: 18px;
