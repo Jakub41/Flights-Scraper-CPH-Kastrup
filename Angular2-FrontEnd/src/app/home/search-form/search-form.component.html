@@ -2,7 +2,9 @@
   <div class="form-group col-xs-12 col-md-12 col-lg-12">
     <div class="input-group" id="adv-search">
         <div class="marginForSearch">
-            <input type="text" class="form-control" placeholder="Search for flight..." [(ngModel)]="searchStr" name="searchStr" (keyup)="inputSearch()" (keyup.enter)="searchFlights()"/>
+            <input type="text" class="form-control" placeholder="Search for flight..."
+                  [(ngModel)]="searchStr" name="searchStr" (keyup)="inputSearch()"
+                  (keyup.enter)="searchFlights()"/>
         </div>
         <div class="marginForSearch">
             <my-date-picker [options]="myDatePickerOptions" (dateChanged)="onDateChanged($event)"></my-date-picker>

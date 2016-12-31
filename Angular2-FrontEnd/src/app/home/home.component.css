@@ -50,3 +50,7 @@ header h1 {
   float: right;
   margin-top: 20px;
 }
+
+.table>thead>tr>th {
+    padding-left: 5px!important;
+}

@@ -1,7 +1,7 @@
 #adv-search{
   z-index: 0;
   width: 100%;
-  text-align: center;
+  text-align: left;
 }
 .dropdown.dropdown-lg .dropdown-menu {
     margin-top: -1px;
@@ -32,17 +32,20 @@
 }
 
 .marginForSearch {
-    margin: 10px 10px 0 0; 
-    float:left; 
-    width: 30%; 
+    margin: 10px 10px 0 0;
+    float:left;
+    width: 30%;
     min-width:200px;
 }
 .marginForSearchButton {
-    margin: 10px 10px 0 0; 
-    float:left; 
+    margin: 10px 10px 0 0;
+    float:left;
 }
 
 @media screen and (max-width: 768px) {
+  #adv-search{
+    margin: 0 auto;
+  }
     .dropdown.dropdown-lg {
         position: static !important;
     }
