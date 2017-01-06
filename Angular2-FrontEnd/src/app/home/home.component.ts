@@ -15,7 +15,7 @@ export class HomeComponent implements OnInit {
   private updatedTime;
   private arrivalColor;
   private departureColor;
-  
+
   constructor(
     private http: HttpService,
     private Loading: LoadingService

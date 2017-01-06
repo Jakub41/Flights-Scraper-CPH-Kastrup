@@ -1,31 +1,38 @@
-#adv-search{
-  z-index: 0;
-  width: 100%;
-  text-align: left;
+#adv-search {
+    z-index: 0;
+    width: 100%;
+    text-align: left;
 }
+
 .dropdown.dropdown-lg .dropdown-menu {
     margin-top: -1px;
     padding: 6px 20px;
 }
+
 .input-group-btn .btn-group {
     display: flex !important;
 }
+
 .btn-group .btn {
     border-radius: 0;
     margin-left: -1px;
 }
+
 .btn-group .btn:last-child {
     border-top-right-radius: 4px;
     border-bottom-right-radius: 4px;
 }
+
 .btn-group .form-horizontal .btn[type="submit"] {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
 }
+
 .form-horizontal .form-group {
     margin-left: 0;
     margin-right: 0;
 }
+
 .form-group .form-control:last-child {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
@@ -33,23 +40,35 @@
 
 .marginForSearch {
     margin: 10px 10px 0 0;
-    float:left;
+    float: left;
     width: 30%;
-    min-width:200px;
+    min-width: 200px;
 }
+
 .marginForSearchButton {
     margin: 10px 10px 0 0;
-    float:left;
+    float: left;
 }
 
 @media screen and (max-width: 768px) {
-  #adv-search{
-    margin: 0 auto;
-  }
+    #adv-search {
+        margin: 0 auto;
+    }
     .dropdown.dropdown-lg {
         position: static !important;
     }
     .dropdown.dropdown-lg .dropdown-menu {
         min-width: 500px;
+    }
+    .marginForSearch {
+        margin: 10px 10px 0 11px;
+        float: left;
+        width: 80%;
+        min-width: 200px;
+    }
+    .input-group-btn:last-child>.btn,
+    .input-group-btn:last-child>.btn-group {
+        z-index: 2;
+        margin-left: 0;
     }
 }
