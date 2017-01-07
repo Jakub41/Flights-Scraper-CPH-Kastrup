@@ -17,6 +17,7 @@ import { HttpService } from '../services/http.service';
 import { LoadingService } from '../services/loading.service';
 import { SearchFormComponent } from './home/search-form/search-form.component';
 import { FlightCardComponent } from './home/search-form/flight-card/flight-card.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { FlightCardComponent } from './home/search-form/flight-card/flight-card.
     AppComponent,
     HomeComponent,
     SearchFormComponent,
-    FlightCardComponent
+    FlightCardComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
