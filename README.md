@@ -9,7 +9,7 @@ The application demo is stored on 2 servers:
 
 Demo Page: [App](https://cph-flights-information.firebaseapp.com/)
 
-**PS:** On `Windows10` the site could not be reached!!!. 
+**PS:** On `Windows10` the site could not be reached!!!.
 
 ## Description
 
@@ -23,5 +23,6 @@ The application is composed of two parts.
 
 For more information and speicfication check these links:
 
-* [Flask API](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/FlaskAPI-BackEnd)
-* [Angular2](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/Angular2-FrontEnd)
+* [Flask API V1.0](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/FlaskAPI-BackEnd)
+* [Angular2 FrontEnd V1.0 ](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/Angular2-FrontEnd)
+* [Angular2 FrontEnd V2.0](https://github.com/Jakub41/Flights-Scraper-CPH-Kastrup/tree/master/Angular2-FrontEnd-V2.0)
