@@ -7,7 +7,9 @@ The application demo is stored on 2 servers:
 * Angular2 on [Firebase](https://firebase.google.com/docs/hosting/) featured by Google
 * Flask API on my own domain/subdomain [scraperapi/arrivals](https://scraperapi.jakublemiszewski.com/api/arrivals/) & [scraperapi/departures](https://scraperapi.jakublemiszewski.com/api/departures/)
 
-Demo Page: [App](https://cph-flights-information.firebaseapp.com/)
+Demo Pages:
+* [App V1.0](https://cph-flights-information.firebaseapp.com/)
+* [App V2.0](https://cph-flight-informationsv2.firebaseapp.com/)
 
 **PS:** On `Windows10` the site could not be reached!!!.
 
