@@ -1,230 +1,203 @@
 .wrapper {
-  display: none;
+    display: none;
+    min-height: 100%;
+    margin-bottom: -50px;
+    background: #006e8e;
+    @media screen and (max-width: 576px) {
+        background: linear-gradient(#006a8e 0%, #ffffff 10%);
+    }
+    @media screen and (min-width: 577px) {
+        background: linear-gradient(#006a8e 0%, #ffffff 30%);
+    }
+    &::after{
+      display: block;
+      content: "";
+    }
+      app-footer {
+          height: 50px;
+      }
 
-  min-height: 100%;
-  margin-bottom: -50px;
-
-  background: #006e8e;
-  @media screen and (max-width: 576px){
-    background: linear-gradient(#006a8e 0%, #ffffff 10%);
-  }
-  @media screen and (min-width: 577px){
-    background: linear-gradient(#006a8e 0%, #ffffff 30%);
-  }
-}
-
-.wrapper:after {
-  display: block;
-
-  content: "";
-}
-
-app-footer, .wrapper:after {
-  height: 50px;
 }
 
 app-footer {
   display: none;
-
   text-align: center;
 }
 
 .cssload-loader * {
-  // box-sizing: border-box;
-  transition: all .25s linear;
+    // box-sizing: border-box;
+    transition: all 0.25s linear;
 }
 
 .cssload-loader {
-		overflow: hidden;
-  // margin: 30vh auto 0 auto;
-  // width: 195px;
-  // height: 195px;
-  // perspective: 390px;
-  // transform-type: preserve-3d;
-
+    overflow: hidden;
+    // margin: 30vh auto 0 auto;
+    // width: 195px;
+    // height: 195px;
+    // perspective: 390px;
+    // transform-type: preserve-3d;
     width: 100%;
-		height: 100%;
+    height: 100%;
+    -webkit-animation: back 5s infinite;
+    -moz-animation: back 5s infinite;
+    animation: back 5s infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+    background: url("./assets/image/airplane-back.jpg");
+    background-size: cover;
+}
+@-webkit-keyframes back {
+    from {
+        background-position-y: bottom;
+    }
 
-		-webkit-animation: back 5s infinite;
-		-moz-animation: back 5s infinite;
-		animation: back 5s infinite;
-		-webkit-animation-timing-function: linear;
-		-moz-animation-timing-function: linear;
-		animation-timing-function: linear;
+    to {
+        background-position-y: top;
+    }
+}
+/* The background animation */
+@-webkit-keyframes back {
+    from {
+        background-position-y: bottom;
+    }
 
-		background: url("http://dl.dropboxusercontent.com/u/12646264/assets/airplane-back.jpg");
-		background-size: cover;
-	}
-
-  @-webkit-keyframes back {
-		from {background-position-y: bottom;}
-		to {background-position-y: top;}
-	}
-
-  /* The background animation */
-
-	@-webkit-keyframes back {
-		from {background-position-y: bottom;}
-		to {background-position-y: top;}
-	}
-
-
+    to {
+        background-position-y: top;
+    }
+}
 /* The airplane image */
-	#im-container {
-		position: absolute;
-		top: 0;
-		right: 0;
-		bottom: 0;
-		left: 0;
+#im-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    max-width: 300px;
+    height: 40%;
+    max-height: 330px;
+    margin: auto;
+    -webkit-transition: all 10s cubic-bezier(.5, .025, .005, 2);
+    -moz-transition: all 10s cubic-bezier(.5, .025, .005, 2);
+    transition: all 10s cubic-bezier(.5, .025, .005, 2);
+    background: url("./assets/image/airplane-shadow.png")no-repeat bottom right;
+    background-size: 20%;
+    -o-transition: all 10s cubic-bezier(.5, .025, .005, 2);
+}
 
-		width: 35%;
-		max-width: 300px;
-		height: 40%;
-		max-height: 330px;
-		margin: auto;
-
-		-webkit-transition: all 10s cubic-bezier(.5, .025, .005, 2);
-		-moz-transition: all 10s cubic-bezier(.5, .025, .005, 2);
-		transition: all 10s cubic-bezier(.5, .025, .005, 2);
-
-		background: url("http://dl.dropboxusercontent.com/u/12646264/assets/airplane-shadow.png")no-repeat bottom right;
-		background-size: 20%;
-
-		-o-transition: all 10s cubic-bezier(.5, .025, .005, 2);
-	}
-
-	#airplane {
-		display: block;
-
-		width: 80%;
-		height: auto;
-		margin: auto;
-	}
-
-
+#airplane {
+    display: block;
+    width: 80%;
+    height: auto;
+    margin: auto;
+}
 // The hover animation
+.action {
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+}
 
-	.action {
-		  position: absolute;
-		  z-index: 1;
+.action.left,
+.action.right {
+    width: 40%;
+}
 
-		  height: 100%;
-	}
+.action.middle {
+    right: 0;
+    left: 0;
+    width: 20%;
+    margin: auto;
+}
+// The direction anchors
+.left {
+    left: 0;
+    cursor: url("./assets/image/pointer-left.png"), w-resize;
+}
 
-	.action.left,
-	.action.right {
-		width: 40%;
-	}
+.middle {
+    cursor: url("./assets/image/pointer-center.png"), w-resize;
+}
 
-	.action.middle {
-		right: 0;
-		left: 0;
+.right {
+    right: 0;
+    cursor: url("./assets/image/pointer-right.png"), w-resize;
+}
 
-		width: 20%;
-		margin: auto;
-	}
-
-	// The direction anchors
-
-	.left {
-		left: 0;
-
-		cursor: url("http://dl.dropboxusercontent.com/u/12646264/assets/pointer-left.png"), w-resize;
-	}
-
-	.middle {
-		cursor: url("http://dl.dropboxusercontent.com/u/12646264/assets/pointer-center.png"), w-resize;
-	}
-
-	.right { right: 0;
-
-		cursor: url("http://dl.dropboxusercontent.com/u/12646264/assets/pointer-right.png"), w-resize;
-	}
-
-	.right:hover ~ #im-container {
-	  transform: translateX(120%) rotateZ(2deg);
-	}
-
-	// Actualy moving the airplane
-
-	.left:hover ~ div {
-	  transform: translateX(-120%) rotateZ(-2deg);
-	}
-
+.right:hover ~ #im-container {
+    transform: translateX(120%) rotateZ(2deg);
+}
+// Actualy moving the airplane
+.left:hover ~ div {
+    transform: translateX(-120%) rotateZ(-2deg);
+}
 // Hint
+#hint {
+    position: fixed;
+    z-index: 9;
+    right: 0;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    font-family: 'Open sans', 'Lato', 'Helvetica' , sans-serif;
+    font-size: 11px;
+    line-height: 1;
 
-	#hint {
-		position: fixed;
-		z-index: 9;
-		right: 0;
-		bottom: 10%;
-		left: 0;
-
-		width: 100%;
-		height: 50px;
-		margin: auto;
-
-		text-align: center;
-
-		color: white;
-
-		font-family: 'Open sans', 'Lato', 'Helvetica' , sans-serif;
-		font-size: 11px;
-		line-height: 1;
     * {
-  		margin: 0px;
-  		padding: 0px;
+        margin: 0;
+        padding: 0;
 
-      h2,h3 {
-        font-weight: 100;
-      }
-  	}
-	}
+        h2,
+        h3 {
+            font-weight: 100;
+        }
+    }
+}
 
-	.credit {
-		font-weight: 800;
+.credit {
+    font-weight: 800;
+
     a {
-  		padding-right: 20px !important;
+        padding-right: 20px !important;
+        cursor: pointer !important;
+        transition: all 0.15s linear;
+        text-decoration: none;
+        color: black;
+        background: url("./assets/image/open-in-new-window-icon.png")no-repeat right;
+        background-size: 12px;
+        -filter: invert(1);
+        -webkit-filter: invert(1);
+        -moz--filter: invert(1);
+        -o--filter: invert(1);
+    }
 
-  		cursor: pointer !important;
-  		transition: all .15s linear;
-  		text-decoration: none;
-
-  		color: black;
-  		background: url("https://dl.dropboxusercontent.com/u/12646264/assets/open-in-new-window-icon.png")no-repeat right;
-  		background-size: 12px;
-
-  		-filter: invert(1);
-  		-webkit-filter: invert(1);
-  		-moz--filter: invert(1);
-  	  -o--filter: invert(1);
-
-  	}
     a:hover {
-  		color: deepskyblue;
-  	}
-	}
+        color: deepskyblue;
+    }
+}
 /* This is only for a nice thumbnail on the codepen repository and guys without monster screens like mine */
+@media all and (max-height: 500px) {
+    #hint {
+        bottom: 75%;
+        font-size: 14px;
+        line-height: 1;
 
-	@media all and (max-height: 500px) {
-		#hint {
-			bottom: 75%;
+        p {
+            display: none;
+        }
+    }
 
-			font-size: 14px;
-			line-height: 1;
-      p {
-  			display: none;
-  		}
-		}
-
-		#airplane {
-			display: block;
-
-			width: auto;
-			height: 70% !important;
-		}
-	}
-
+    #airplane {
+        display: block;
+        width: auto;
+        height: 70% !important;
+    }
+}
 // .cssload-square {
 //   position: absolute;
 //   top: 0;
