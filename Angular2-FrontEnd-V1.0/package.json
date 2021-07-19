@@ -30,7 +30,7 @@
     "ng2-bootstrap": "^1.1.16",
     "ng2-bs-dropdown": "^0.7.0",
     "ng2-dropdown": "0.0.21",
-    "ng2-smart-table": "^0.4.0-5",
+    "ng2-smart-table": "0.5.0",
     "primeng": "^1.1.0",
     "rxjs": "5.5.12",
     "ts-helpers": "^1.1.1",
