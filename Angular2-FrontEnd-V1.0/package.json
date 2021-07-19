@@ -32,7 +32,7 @@
     "ng2-dropdown": "0.0.21",
     "ng2-smart-table": "^0.4.0-5",
     "primeng": "^1.1.0",
-    "rxjs": "5.0.0-beta.12",
+    "rxjs": "5.5.12",
     "ts-helpers": "^1.1.1",
     "zone.js": "^0.6.23"
   },
