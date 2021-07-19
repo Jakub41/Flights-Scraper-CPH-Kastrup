@@ -53,6 +53,6 @@
     "ts-node": "1.7.3",
     "tslint": "3.13.0",
     "typescript": "~2.0.3",
-    "webdriver-manager": "10.2.5"
+    "webdriver-manager": "10.3.0"
   }
 }
