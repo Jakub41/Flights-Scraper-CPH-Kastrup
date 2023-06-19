@@ -23,7 +23,7 @@
     "@angular/router": "12.2.5",
     "@types/lodash": "^4.14.45",
     "angular2-datatable": "0.6.0",
-    "bootstrap": "^4.0.0-alpha.6",
+    "bootstrap": "^5.0.0",
     "core-js": "3.17.3",
     "lodash": "^4.17.4",
     "rxjs": "7.3.0",
