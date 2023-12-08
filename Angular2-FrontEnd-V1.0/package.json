@@ -50,7 +50,7 @@
     "karma-jasmine": "^1.0.2",
     "karma-remap-istanbul": "0.6.0",
     "protractor": "7.0.0",
-    "ts-node": "10.1.0",
+    "ts-node": "10.9.2",
     "tslint": "5.20.1",
     "typescript": "4.4.3",
     "webdriver-manager": "12.1.8"
